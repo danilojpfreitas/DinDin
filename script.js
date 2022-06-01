@@ -1,3 +1,5 @@
+// Menu Hamburguer
+
 const btnMobile = document.getElementById('btn-mobile')
 
 function toggleMenu(event) {
@@ -14,3 +16,20 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
+
+
+// Dark Mode
+
+const darkmode = document.getElementById('switch')
+const html = document.getElementById('html')
+
+function toggleMenu2(event2) {
+    if (event2.type == 'change') event.preventDefault()
+    const html = document.getElementById('html')
+    html.classList.toggle('dark')
+    const dark = html.classList.contains('dark')
+}
+
+darkmode.addEventListener('change', toggleMenu2)
+darkmode.addEventListener('click', toggleMenu2)
+

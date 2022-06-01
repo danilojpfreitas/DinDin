@@ -16,6 +16,20 @@
     --color-form: #686868
 }
 
+/* dark mode */
+
+.dark:root {
+    --color-header: #111;
+    --color-white: #fff;
+    --color-pink: #111;
+    --color-grey: #555555;
+    --color-backwhite: #686868;
+    --color-green: #111;
+    --color-line: #c4c4c4;
+    --color-black: #fff;
+    --color-form: #686868
+}
+
 /* index */
 
 /* header */
@@ -31,7 +45,12 @@ header {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin-top: 1.5rem;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 #menu li a, footer .footer02 a{
@@ -44,6 +63,17 @@ header {
 
 #btn-mobile {
     display: none;
+}
+
+/* dark mode button */
+
+#switch {
+    background-color:  var(--color-black);
+    border: 1px solid var(--color-black);
+    color: var(--color-backwhite);
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
 }
 
 /* container01-01 */
@@ -258,6 +288,19 @@ footer .footer03 a {
     border-color: white;
     border-radius: 20px;
     margin-bottom: 1rem;
+}
+
+footer .footer01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer01 a span {
+    font-family: 'Smooch', cursive;
+    color: var(--color-backwhite);
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 /* cursos */
@@ -477,8 +520,8 @@ footer .footer03 a {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: var(--color-backwhite);
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #container05-02 .container05-02 img {
@@ -548,6 +591,23 @@ footer .footer03 a {
         transition: 0.3s;
     }
 
+    #nav {
+        flex-direction: column;
+    }
+
+    #nav.active {
+        flex-direction: column-reverse;
+        padding-bottom: 3rem;
+    }
+
+    #nav.active #btn-mobile, #btn-mobile {
+        color: var(--color-black);
+    }
+
+    #switch {
+        height: 1.5rem;
+    }
+
     #nav.active #menu {
         display: block;
         position: absolute;
@@ -574,7 +634,6 @@ footer .footer03 a {
     #btn-mobile {
         display: flex;
         padding: 0.5rem 1rem;
-        padding-top: 2rem;
         font-size: 1rem;
         border: none;
         background: none;
@@ -873,4 +932,8 @@ footer .footer03 a {
     header img {
         width: 200px;
     }
+}
+
+Dark Mode {
+
 }

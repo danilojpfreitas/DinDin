@@ -176,9 +176,13 @@ header {
 
 /* container01-04  */
 
-#container01-04 h2 {
-    margin-left: 5rem;
+#container01-04 {
     background-color: var(--color-backwhite);
+}
+
+#container01-04 h2 {
+    margin-top: 2rem;
+    margin-left: 5rem;
 }
 
 #container01-04, .container01-04-box {
@@ -226,8 +230,7 @@ footer {
     background-color: var(--color-header);
     display: flex;
     justify-content: space-around;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
 footer .footer02, footer .footer03 {
@@ -264,7 +267,7 @@ footer .footer03 a {
 #container02-01 {
     margin-left: 4rem;
     margin-bottom: 3rem;
-    width: 1244px;
+    width: 1000px;
 }
 
 #container02-01 h2 {
@@ -288,7 +291,7 @@ footer .footer03 a {
 }
 
 #container02-02 .container02-02 {
-    width: 1244px;
+    width: 1000px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -351,7 +354,7 @@ footer .footer03 a {
     justify-content: space-around;
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
-    width: 1244px;
+    width: 1000px;
 }
 
 #container03-02 .container03-02:nth-child(2) {
@@ -391,8 +394,12 @@ footer .footer03 a {
     margin-bottom: 3rem;
 }
 
+.container04-01 img {
+    width: 800px;
+}
+
 .container04-01 , .container04-02 , .container04-03 {
-    width: 1032px;
+    width: 1000px;
 }
 
 .container04-01 p, .container04-02 p, .container04-03 p {
@@ -475,7 +482,7 @@ footer .footer03 a {
 }
 
 #container05-02 .container05-02 img {
-    width: 518px;
+    width: 500px;
     height: 259px;
 }
 
@@ -534,16 +541,14 @@ footer .footer03 a {
 
     /* header */
 
-    #btn-mobile {
-        display: block;
-    }
-
     #menu {
-        display: none;
+        display: block;
+        height: 0px;
+        visibility: hidden;
+        transition: 0.3s;
     }
 
     #nav.active #menu {
-        display: flex;
         display: block;
         position: absolute;
         width: 100%;
@@ -551,7 +556,9 @@ footer .footer03 a {
         right: 0px;
         background: var(--color-header);
         height: 18rem;
-
+        transition: 0.6s;
+        visibility: visible;
+        overflow-y: auto;
     }
 
     #nav.active #menu li {
@@ -562,6 +569,59 @@ footer .footer03 a {
 
     #menu a {
         margin: 4rem 1rem;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        padding-top: 2rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        width: 20px;
+        border-top: 2px solid; 
+        display: block;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: var(--color-black);
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    /* footer */
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    footer div {
+        padding: 1rem 0;
     }
 
     /* index */
@@ -588,6 +648,229 @@ footer .footer03 a {
         margin-bottom: 1rem;
     }
 
+    #container01-03 {
+        align-items: center;
+        margin-left: 0rem;
+    }
 
+    #container01-03 h2 {
+        margin-bottom: 0rem;
+    }
 
+    #container01-03 .container01-03 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container01-04 {
+        align-items: center;
+    }
+
+    #container01-04 h2 {
+        margin-left: 0rem;
+    }
+
+    #container01-04 .container01-04 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container01-04 .container01-04 p {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    /* cursos */
+
+    #container02-01 {
+        width: 600px;
+    }
+
+    #container02-02 .container02-02 {
+        width: 600px;
+        flex-direction: column;
+    }
+
+    #container02-02 .container02-02 .container02-02-02 {
+        align-items: center;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+
+    #container02-02 .container02-02 .container02-02-02 p {
+        text-align: center;
+    }
+
+    /* curso */
+
+    #container03-01 .container03-01-02 {
+        display: none;
+    }
+
+    #container03-01 .container03-01-01 h2, #container03-01 .container03-01-01 p {
+        text-align: center;
+    }
+
+    #container03-02 .container03-02 {
+        width: 600px;
+    }
+
+    #container03-02 .container03-02 .container03-02-01 img {
+        width: 200px;
+    }
+
+    #container03-02 .container03-02 .container03-02-02 {
+        padding-left: 2rem;
+    }
+
+    #container03-02 .container03-02 .container03-02-02 p {
+        margin-top: 0.5rem;
+    }
+
+    /* post */
+
+    .container04-01 , .container04-02 , .container04-03 {
+        width: 600px;
+    }
+
+    .container04-01 h2 {
+        text-align: center;
+    }
+
+    /* blog */
+
+    #container05-01 {
+        padding-bottom: 2rem;
+    }
+
+    #container05-01 .container05-01-01 h2, #container05-01 .container05-01-01 {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    #container05-01 .container05-01-02 {
+        display: none;
+    }
+
+    #container05-02 {
+        padding-top: 2rem;
+        margin: 0;
+    }
+
+    /* contato  */
+
+    #container06 .container06-02 {
+        display: none;
+    }
+
+}
+
+/* iPad Air */
+
+@media only screen and (max-width: 820px) {
+
+    /* post */
+
+    .container01-03-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container01-03-box img {
+        width: 50%;
+        padding-bottom: 2rem;
+    }
+
+    #container01-03 .container01-03 p {
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    #container02-01 {
+        width: 200px;
+    }
+
+    #container02-02 .container02-02 {
+        width: 200px;
+    }
+
+    #container02-02 .container02-02 .container02-02-02 h4 {
+        text-align: center;
+    }
+
+    #container02-02 .container02-02 .container02-02-02 p {
+        width: 100%;
+    }
+    
+    #container03-02 .container03-02 {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #container03-02 .container03-02 .container03-02-02 {
+        align-items: center;
+        padding-left: 0rem;
+    }
+
+    #container03-02 .container03-02 .container03-02-02 h4 {
+        padding-top: 1rem;
+    }
+
+    #container03-02 .container03-02 .container03-02-02 p {
+        text-align: center;
+    }
+
+    .container04-01 img {
+        width: 500px;
+    }
+
+}
+
+/* iPhone XR */
+
+@media only screen and (max-width: 500px) {
+
+    #container01-02 .container01-02-box h4, #container01-04 .container01-04-box h4, .container04-02 h4, #container05-02 .container05-02 h4, #container05-01 .container05-01-01 p {
+        font-size: 18px;
+        padding-top: 1rem;
+    }
+
+    #container01-03 h2, #container01-04 h2, .container04-01 h2, #container01-02-novo h4, #container05-01 .container05-01-01 h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .container02-02-01 img, #container03-01 .container03-01-01 p, #container03-02 .container03-02 .container03-02-02 p, .container04-01, .container04-01 h2, .container04-01 img, .container04-01 p, .container04-02, .container05-01-01, #container05-01 .container05-01-01 p, #container05-02 .container05-02 img, #container05-02 .container05-02 p, #container06 .container06-01 .form, #container06 .container06-01 .mensagem {
+        width: 250px;
+    }
+
+    #container05-02 .container05-02 img {
+        height: 150px;
+    }
+
+    #container01-01 .container01-01-box01 h2, #container01-01 .container01-01-box01 h4, #container05-02 .container05-02 h4, #container05-02 .container05-02 p {
+        text-align: center;
+    }
+
+    #container01-01 .container01-01-box01 .button01 {
+        margin-left: 1rem;
+    }
+
+    footer .footer01 a img {
+        width: 200px;
+    }
+
+    footer .footer02 a{
+        font-size: 1.2rem;
+    }
+
+}
+
+/* iPhone SE */ 
+
+@media only screen and (max-width: 375px) {
+
+    header img {
+        width: 200px;
+    }
 }

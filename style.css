@@ -255,6 +255,7 @@ header {
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 3rem;
+    text-decoration: none;
 }
 
 /* footer */
@@ -264,6 +265,10 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 3rem 0;
+}
+
+footer .footer01 .danilo {
+    text-decoration: none;
 }
 
 footer .footer02, footer .footer03 {
@@ -280,6 +285,7 @@ footer .footer02 a {
 footer .footer03 a {
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
 .button03 {

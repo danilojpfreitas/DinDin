@@ -74,6 +74,7 @@ header {
     width: 5rem;
     height: 2.5rem;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 /* container01-01 */
@@ -110,6 +111,7 @@ header {
     font-size: 1.2rem;
     width: 15rem;
     height: 3rem;
+    cursor: pointer;
 }
 
 #container01-01 .container01-01-box02 img {
@@ -159,6 +161,7 @@ header {
   border: none;
   padding: 0.7rem;
   padding-inline: 2rem;
+  cursor: pointer;
 }
 
 #container01-02-box03 img {
@@ -288,6 +291,7 @@ footer .footer03 a {
     border-color: white;
     border-radius: 20px;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 footer .footer01 {
@@ -367,6 +371,7 @@ footer .footer01 a span {
     width: 233px;
     height: 51px;
     border: none;
+    cursor: pointer;
 }
 
 /* curso */

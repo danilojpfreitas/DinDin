@@ -3,7 +3,7 @@
 ## Descrição do Projeto
 ---
 <p>
-    Projeto elaborado para o desafio Hacker - Hands on Week 1 da Gama Academy, para a sua produção foi utilizado HTML, CSS e JavaScript. <br>
+    Projeto elaborado para o desafio Hacker - Hands on Week 1 da Gama Academy, para a sua produção foi utilizado HTML, CSS e JavaScript. O projeto consiste em uma plataforma de conteúdo sobre Educação Financeira.<br>
 </p> <br>
 
 

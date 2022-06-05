@@ -1,5 +1,3 @@
-<img src="./dindin-imagens/logo-header.png" alt="Logo DinDin">
-
 # Desafio Hands On Gama - Dindin
 
 ## Descrição do Projeto

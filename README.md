@@ -1,4 +1,4 @@
-# Desafio Hands On Gama - Dindin
+# Dindin
 
 ## Descrição do Projeto
 ---
